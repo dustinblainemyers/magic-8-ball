@@ -55,8 +55,11 @@ class App extends Component {
     
 
     return (
-    <div>
-      <form onSubmit={this.handleSubmit}>
+    <div className="container">
+    
+    <div className="formcont">
+
+    <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           value={this.state.userName}
@@ -65,6 +68,12 @@ class App extends Component {
         <input type="submit" value="Submit" />
         
       </form>
+    </div>
+      
+
+      <div className="eightballpic">
+
+      </div>
       
       <QuestionHistory answers={ this.state.answers}/>
     </div>
